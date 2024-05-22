@@ -1,0 +1,396 @@
+@import url("https://fonts.goog1eapis.com/css2?family=Poppins:wght@400;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+
+body{
+    display: flex;    
+    flex-direction: row;
+    width: auto;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom:0 ;
+    width: 100px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #2a5e98;
+}
+
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active{
+    background: #e0e0e058;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span{
+    overflow: hidden;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+}
+
+/* ---- main body ----*/
+.main__content{
+    background: #ebe9e9;
+    width: calc(100% - 100px);
+    margin-right: 0px;
+}
+
+.header__wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header__title{
+    color: #000;
+}
+
+.user__info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search__box{
+    background: #f2f2f2;
+    border-radius: 15px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 12px;
+}
+
+.search__box input{
+    background: transparent;
+    padding: 10px;
+}
+
+.search__box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search__box i:hover{
+    transform: scale(1.2);
+}
+
+/*---- card container ----*/
+.card__container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main__title{
+    color: rgb(113, 99, 186, 255);
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.payment__card{
+    background: rgb(229, 223, 223);
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.payment__card:hover{
+    transform: translateY(-5px);
+}
+
+.card__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.amount__value{
+    font-size: 24px;
+    font-family: "Courier New", 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.icon{
+    color: #fff;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: red;
+}
+
+.card__detail{
+    font-size: 10px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family: "Courier New", 'Courier New', Courier, monospace;
+}
+                                 
+/* color css */
+.light-red {
+    background: rgb(251, 233, 233);
+}
+
+.light-purple{
+    background: rgb(254, 226, 254);
+}
+
+.light-green{
+    background: rgb(235, 254, 235);
+}
+
+.light-blue{
+    background: rgb(236, 236, 254);
+}
+
+.dark-red{
+    background: red;
+}
+
+.dark-purple{
+    background: purple;
+}
+
+.dark-green{
+    background: green;
+}
+
+.dark-blue{
+    background: blue;
+}
+
+/* tabular section*/
+.tabular__wrapper{
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.table__container{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: #2a5e98;
+    color: #fff;
+}
+
+th{
+    padding: 15px;
+    text-align: left;
+}
+
+tbody{
+    background: #f2f2f2;
+}
+
+td{
+    padding:15px;
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background: #fff;
+}
+
+tfoot{
+    background: #2a5e98;
+    font-weight: bold;
+    color: #efe7e7;
+}
+
+tfoot td {
+    padding: 15px;
+    color: #fff;
+}
+
+
+.table__container button{
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+
+/*----- CUSTOMER -----*/
+.table__customer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.table__customer tr:first-child, 
+.table__order tr:first-child,
+.table__product tr:first-child,
+.table__category tr:first-child {
+    background-color: #2a5e98;
+    color: #fff;
+}
+
+.table__customer thead, 
+.table__order thead,
+.table__product thead,
+.table__category thead{
+    background: #f2f2f2;
+}
+
+/*----- PRODUCT -----*/
+.table__product img{
+    width: 50px;
+    height: 70px;
+}
+
+/*----- CATEGORIES -----*/
+.header__add{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header__add button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2a5e98;
+}
+
+.header__add button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*----- ADD CATEGORIES -----*/
+.category__button{
+    background: #2a5e98;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    margin-left: 30%;
+}
+
+.add__new{
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0); 
+    width: 500px; 
+    height: 30px;
+}
+
+.category__button{
+    margin-top: 20px;
+}
+
+/*----- ADD PRODUCT -----*/
+.add__newproduct{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.add__newproduct input, 
+.image__product{
+    margin-top: 20px;
+}
+
+.add__newproduct input{
+    border-bottom: 1px solid rgb(0, 0, 0); 
+    width: 500px; 
+    height: 30px;
+}
+

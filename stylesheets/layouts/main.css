@@ -1,0 +1,423 @@
+@import url("https://fonts.goog1eapis.com/css2?family=Poppins:wght@400;600&display=swap");
+/*=====HEADER=====*/  
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+i{
+    color:#000;
+}
+
+/*===== MAIN =====*/
+.main__container{
+    margin-top: 30px;
+    width: 100% ;
+
+}
+
+main{
+    background-color: #fff;
+    width: auto;
+}
+
+
+/*-------- HOME --------*/
+.home__container{
+    padding-top: 2rem;
+    margin-left: 10px;
+    width:45%;
+}
+
+.home__section{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.home__title{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.home__intro{
+    width: 90%;
+    margin-left: 5%;
+}
+.home__intro button{
+    background: #e24843;
+    margin-left: 45%;
+    border: 1px solid #e24843;
+}
+.home__swiper{
+    width: 100%;
+    margin: initial;
+}
+
+.home__section{
+    display: flex;
+}
+
+.home__image{
+    display: grid;
+    
+}
+.home__article,
+.home__img{
+    width: 200px;
+    transition: scale .4s;
+    max-width: 300px;
+    max-height: 600px;
+    
+}
+.home__article{
+    scale: .8;
+}
+
+/*-------- Swiper class --------*/
+.swiper-slide-active,
+.swiper-slide-duplicate-active{
+    scale: 1;
+}
+.swiper-wrapper{
+    padding-left: 50px;
+}
+.swiper-slide{
+    flex-shrink: 0;
+    width: 10%;
+    height: 10%;
+    position: relative;
+    transition-property: transform;
+}
+.swiper{
+    overflow: auto;
+}
+
+/*-------- ABOUT --------*/
+.about__section{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    background-color: #eaeaea;
+    border-radius: 15px;
+}
+
+.about__image{
+    width: 40rem;
+}
+
+.about__tag{
+    margin-left: 20px;
+}
+
+.about__tag h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about__tag button{
+    background: #e24843;
+    margin-left: 50%;
+    border: 1px solid #e24843;
+}
+
+.about-btn a{
+    padding: 2px;
+}
+
+.about__section, .about__tag p{
+    line-height: 22px;
+    width: 50%px;
+    text-align: justify;
+}
+
+.about-btn{
+    padding: 10px, 20px;
+    background-color: #5153d1;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top:50px;
+}
+
+/*-------- FEATURED --------*/
+.featured__container{
+    width:100%;
+    height:80vh;
+    margin-bottom: 35px;
+    position: relative;
+    margin-bottom: 35px;
+    margin-top: 60px;
+}
+
+.featured__box{
+    height: 100%;
+}
+
+.featured__container i {
+    margin-top: 10%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transition: transform 0.1s linear;
+  }
+  .featured__container i:first-child{
+    left: 0px;
+    transform: translateY(-200%);
+  }
+  .featured__container i:last-child{
+    right: 0px;
+    transform: translateY(-1040%);
+  }
+
+.featured__container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.featured__container .featured__box{
+    margin: 0 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/4) - 5px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin-left: 65px;
+}
+.featured__box .featured__book__card{
+    scroll-snap-align:  start;
+    
+}
+.featured__container .featured__box .featured__book__card{
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #919191;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: rgba(69, 126, 195, 0.19) 5px 10px 20px, rgba(0, 0, 0, 0.23) 2px 6px 6px;
+}
+.featured__book__image img, .arrivals__image img{
+    width:130px;
+    height:200px;
+}
+
+.featured__book__tag{
+    margin-top: 15px;
+}
+
+.featured__box .featured__book__card .featured__book__tag h2{
+    font-size: 20px;
+}
+
+.featured__box .featured__book__card .featured__book__tag .writer{
+    color: #919191;
+}
+
+.featured__box .featured__book__card .featured__book__tag .categories{
+    color: #5153d1;
+    margin-top: 8px;
+} 
+
+.featured__box .featured__book__card .featured__book__tag p{
+    font-size: 15px;
+}
+
+.featured__box .featured__book__card .featured__book__tag .book__price{
+    margin-top:8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.featured__box .featured__book__card .featured__book__tag .book__price del{
+    font-weight: 100;
+    text-decoration: line-through;
+    padding:0 15px;
+}
+
+.f-btn{
+    padding: 8px 20px;
+    border: 2px solid #6c819a;
+    text-decoration: none;
+    color: #000;
+}
+
+.buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+/*-------- arrivals --------*/
+.arrivals__container{
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+.arrivals__container h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-top: 60px;
+}
+
+.arrivals__container .arrivals-box .arrivals-card{
+    width: 250px;
+    height: 380px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #919191;
+    border-radius: 10px;
+    margin: 0 20px; 
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.arrivals-card p{
+    margin-top: 10px;
+}
+
+.arrivals__container .arrivals-box{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+    margin-top: 35px;
+    padding-left: 37px;
+}
+.arrivals-icon{
+    display: flex;
+    margin-left: 35%;
+    margin-bottom: 20px;
+}
+
+.arrivals-icon i{
+    color: rgb(243, 239, 32);
+}
+
+.arrivals_btn {
+    padding: 8px 20px;
+    border: 2px solid #6c819a;
+    text-decoration: none;
+    color: #000;
+}
+
+/*-------- REVIEW --------*/
+.reviews__container{
+    width:100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+.reviews__container h1{
+    text-align: center;
+    font-size:  40px;
+    font-weight: 600;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+.reviews__container .review-box{
+    width: 95%;
+    margin: 15px auto ;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.reviews__container .review-box .review-card{
+    width: 400px;
+    height: 320px  ;
+    box-shadow: 0 0 8px #1a4df5;
+    padding: 15px;
+    margin:  0 12px;
+
+}
+.reviews__container .review-box .review-card i{
+    float: right;
+    font-size: 120px !important;
+     position: relative;
+     bottom: 20px;
+     color: #eaeaea;
+}
+.reviews__container .review-box .review-card .card-top img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.reviews__container .review-box .review-card .card {
+    margin: 0px 0 10px 0;
+    text-align: justify;
+    line-height: 22px;
+    width: 100%;
+    border: none;
+}
+.reviews__container .review-box .review-card .card h2{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.reviews__container .review-box .review-card .card p{
+    margin: 0px 0 10px 0;
+    text-align:justify;
+    line-height: 22px;
+    width: 100%;
+    font-size: 14px;
+}
+.reviews__container .review-box .review-card .card .review-icon i{
+    transform: scale(0.2);
+    float: left;
+    color: 口#5153d1;
+    padding: 0 lpx;
+}
+.reviews__container .review-box .review-card .card .review-icon{
+    width: 100%;
+    display: flex;
+}
+
+.review-icon{
+    color: rgb(243, 239, 32);;
+}
+
+
+
+
+
+
+
+
+

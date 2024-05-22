@@ -1,0 +1,101 @@
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a, i {
+  text-decoration: none;
+}
+
+#header{
+  position: -webkit-sticky;
+  position: sticky; 
+  top: 0; 
+  z-index: 10;
+  padding: 10px;
+  background-color: #2a5e98;
+  font-size: 13px;
+} 
+
+.header__items i, .header__account i{
+  color: #fff;
+}
+
+.header__container{
+  position: sticky;
+  height: 40px;
+  width:100%;
+  display:flex;
+  padding-left: 5%;
+  font-size: 17px;
+}
+
+.header__logo img{
+  height:100%;
+}
+
+.header__menu{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width:100%;
+}
+
+.header__link{
+  color: #fff;
+}
+
+.navbar{
+  margin-top: 15px;
+}
+
+.header__list{
+  display: flex;
+}
+
+.header__items{
+  display: inline-block;
+  line-height: 80px;
+  margin:0 20px;
+}
+
+.header__user{
+  width: 50px;
+  scale: 0.5;
+}
+
+.header__search{
+  background: #fff;
+  border-radius: 15px;
+  color:aqua;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 12px;
+}
+
+.header__search input{
+  font-size: 13px;
+  border: none;
+  padding: 3px;
+}
+
+.header__search i{
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  color:#000;
+}
+.header__account {
+  width: auto;
+  
+}
+
+
+.header__account a{
+  color: #fff;
+  padding-right: 15px;
+}
